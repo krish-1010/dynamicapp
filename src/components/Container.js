@@ -1,11 +1,14 @@
+import loc from '../images/location.png'
+
 export default function Container(props){
+
     let location = props.location;
     location = location.toUpperCase();
     return (
         <div className="Container">
             <img src={props.imageUrl} alt="pictureOfSection" className="Cardimage" />
             <section className="sections">
-                <img src="../../public/images/location.png" alt="locationlogo" />
+                <img src={loc} alt="locationlogo" />
                 <span className="location">
                     {location}
                     <a href={props.googleMapsUrl} className="glink">
