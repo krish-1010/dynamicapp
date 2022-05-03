@@ -5,7 +5,7 @@ export default function Container(props){
         <div className="Container">
             <img src={props.imageUrl} alt="pictureOfSection" className="Cardimage" />
             <section className="sections">
-                <img src="../../images/location.png" alt="locationlogo" />
+                <img src="../../public/images/location.png" alt="locationlogo" />
                 <span className="location">
                     {location}
                     <a href={props.googleMapsUrl} className="glink">
